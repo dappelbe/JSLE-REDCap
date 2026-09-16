@@ -1,0 +1,27 @@
+{
+  "name" : "uol/jslemodule",
+  "version": "0.1.0",
+  "description" : "An external module for REDCap to support the JSLE data collection process.",
+  "type": "library",
+  "autoload" : {
+    "psr-4": {
+      "UKJSLE\\" : "UoL_JSLE_v0.1",
+      "UoL\\JSLE\\": "src/",
+      "Tests\\UoL\\JSLE\\": "tests/"
+    }
+  },
+  "authors" : [
+    {
+      "name": "Duncan Appelbe",
+      "email": "Duncan.Appelbe@ndorms.ox.ac.uk"
+    }
+  ],
+  "require-dev": {
+    "pestphp/pest": "^3.8"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}

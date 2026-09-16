@@ -1,0 +1,54 @@
+{
+  "name" : "UKJSLE Helper Module",
+  "namespace" : "UoL\\UKJSLE",
+  "description": "An external module to facilitate data collection in REDCap by the JSLE team.",
+  "authors": [
+    {
+      "name" : "Duncan Appelbe",
+      "email": "Duncan.Appelbe@ndorms.ox.ac.uk",
+      "institution": "OxfordTrauma, OCTRU, NDORMS, The University of Oxford"
+    }
+  ],
+  "version": "1.0.0",
+  "framework-version": 15,
+
+  "links": {
+    "project": [
+      {
+        "name": "<span style='margin:1px;'><strong><font style='color: #993365'>JSLE</font></strong> Clinical Report",
+        "key": "ukjsledb",
+        "icon": "databases_arrow",
+        "url": "index.php",
+        "show-project-link": true,
+        "show-header-and-footer": true
+      }
+    ]
+  },
+  "system-settings": [],
+  "project-settings": [
+    {
+      "key": "uol-jsle-dasboard-display-type",
+      "name": "Dashboard display type",
+      "type": "dropdown",
+      "default": "1",
+      "choices": [
+        {
+          "value": "1",
+          "name": "Standard - Display Expected if no forms, else display Actual date"
+        },
+        {
+          "value": "2",
+          "name": "Only display the expected date"
+        },
+        {
+          "value": "3",
+          "name": "Enhanced - Display both expected and actual"
+        }
+      ]
+    }
+  ],
+  "compatibility": {
+    "php-version-min": "8.1",
+    "redcap-version-min": "10.6.17"
+  }
+}
